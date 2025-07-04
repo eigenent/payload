@@ -74,15 +74,25 @@ Problems that needed adressing
 ------------
 ##### 2nd redesign (My work)
 
-My work
+This redesign was triggered by two necessities. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable. This necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. 
 
-###### Container
-
-###### Unibody assembly
+In doing this redesign the primary target was accomodate these changes while at the same time adress some of the shortcomings of the previous designs discussed above, as well as enabling the repressurazation of the payload without the need to completely disassemble the cubesat.
 
 ###### Chip holder
 
+###### Unibody assembly
+
+###### Container
+
+
+
 ###### Comparisons
+
+For comparison here is the old vs new assembly for the paylaod, both exterior and interior. The component reduction is obvious.
+
+![old vs new exterior](https://github.com/user-attachments/assets/8120807d-5b86-46c7-b619-13f6497e0069)
+
+![old vs new interior](https://github.com/user-attachments/assets/195a003c-d701-43dc-9906-31d8d5306111)
 
 ----------
 ##### Newest version
