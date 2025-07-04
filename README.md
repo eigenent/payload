@@ -7,12 +7,16 @@ This document contains a guide through the second major redesign of AcubeSAT's p
 
 ##### Contents
 1. AcubeSAT
-  1.1 Experiment hosted
-  1.2 Design challenges  
-2. Previous designs   
-  2.1 Original
-  2.2 Boupan's redesign  
+   1.1 Experiment hosted
+   1.2 Design challenges  
+2. Previous designs
+   2.1 Original
+   2.2 Boupan's redesign  
 3. 2nd redesign (my work)
+   3.1 Container
+   3.2 Unibody assembly
+   3.3 Chip holder
+   3.4 Alternative design
 4. Newest version
 5. Further reading
 
@@ -29,9 +33,8 @@ The satellite is a 3U+ cubesat. The top 1/3 is occupied by the PCB stack contain
 
 The experiment hosted in the mission can be simply described as taking photographs of an active yeast cell cultivation. There are two parts in it, cultivating the cells and then taking photographs of them. 
 
-The cells are placed in a PDMS chip. 
+The cells are placed inside the channels of a PDMS chip about 30mm x 20mm x 10mm. 
 
-% add picture
 
 ###### Design challenges
 
@@ -66,10 +69,20 @@ The proper distances, that allow for the focus to be maintained are kept with th
 
 Recaping, the version circa 2022 was this one
 
+Problems that needed adressing
+
 ------------
 ##### 2nd redesign (My work)
 
 My work
+
+###### Container
+
+###### Unibody assembly
+
+###### Chip holder
+
+###### Comparisons
 
 ----------
 ##### Newest version
