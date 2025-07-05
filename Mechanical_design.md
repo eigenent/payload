@@ -69,23 +69,40 @@ Before looking at anything and discussing the various designs it is crucial to e
 
 ###### Original
 
-Let us first look at how the team approached the design at a conceptual level, at the first stages of the project, before being accepted into the program. At this conceptual stage, the fundamental design philosophy was established and subsequent redesigns were only modifications on this and did not attempt a major rethink of this philosophy.
+Let us first look at how the team approached the design at a conceptual level, in the first stages of the project, before being accepted into the "FYS!3" program. At this conceptual stage, the fundamental design philosophy was established and subsequent redesigns were only modifications on this and did not attempt a major rethink of this philosophy.
 
-Realizing the major engineering challenges described above the team decided that the best way was to create an enclosure, a container that hosted an interior assembly inside supporting the components that made the experiment possible. This container is sealed tight using a PTFE sealing ring that is being pressed using 16 M3 bolts. 
+Realizing the major engineering challenges described above the team decided that the best way to tackle them was to create an enclosure, a container that hosted an interior assembly supporting the components that made the experiment possible. This container is sealed tight using a PTFE sealing gasket being pressed using 16 M3 bolts. The proper distances, that allow for the focus to be maintained are kept with the aid of the unibody assembly, the chassis into which all other components are mounted on. 
 
-The proper distances, that allow for the focus to be maintained are kept with the aid of the unibody assembly
+![initial paylaod](https://github.com/user-attachments/assets/22f42a0e-ec72-4804-bd6c-a3f28780f87b)
+
+As seen in the above image (everything is inverted, so the SU board is in the -Z direction), the PEEK unibody assembly is made of two almost identical parts which the team called "unibody halfs", one part on which these two were connected on, which housed the two pumps for the fluidics system, and two "unibody sides" connecting all three together. Inside and closer to -Z, there is the chip holder housing the PDMS chip, some microtubes and sensors necessary for controlling the system. Further along on the -Z direction there is the SU PCB assembly consisted of the manifold, its' valves and the SU PCB all mounted on the Unibody assembly using bolts. 
+
+This assembly was then inserted into the container, the aluminium vessel holding everything together, through an opening on its' -Z face. The picture above with the proper distances between parts includes the depiction of the container, however also includes an even older version of the payload interior without the manifold for instance. 
 
 
-###### Boupan's work
+In summary then this design established that:
+- the PDMS chip is to be held inside a chip holder
+- the chip holder is to be supported along with the rest of the parts inside the payload, the optical subsystem, the fludics and the SU PCB, by the unibody assembly
+- everything is housed inside the container, sealed with a PTFE gasket
+- the container is mounted using ribs to the cubesat's frame
 
-Recaping, the version circa 2022 was this one
+This design was assessed by ESA's team of experts during the critical design review (CDR), shortly after acceptance to the program. It had however some shortcomings. For once, the question of assembly procedures was further down the line at this point and most components were also in an early stage meaning that the design was more a theoretical one that practical. Mounting points, tubes and cables inside were also for the most part left out of the process. 
 
-Problems that needed adressing
+
+###### 1st redesign
+
+Those are the holes that the first major redesign attempted to fill. Between the early designs and this one, other modifications were made mostly uncoordinated in order to fix problems that crept up left and right, that left the design somewhat inconsistent with design elements sometimes clashing, with some of the details about tubes, mounting points and cables still not properly defined. This redesign then aimed to unify the design and provide solutions and add detail on the areas discussed above. 
+
+
+
+
+
+
 
 ------------
 ##### 2nd redesign (My work)
 
-This redesign was triggered by two necessities. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable. This necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. 
+Although this redesign was initiated by some specific circumstances, the problems identified above really necessitated a major eventual redesign. That being said, two specific necessities triggered it. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable. This necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. 
 
 In doing this redesign the primary target was accomodate these changes while at the same time adress some of the shortcomings of the previous designs discussed above, as well as enabling the repressurazation of the payload without the need to completely disassemble the cubesat.
 
