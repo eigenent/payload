@@ -24,29 +24,40 @@ This document contains a guide through the second major redesign of AcubeSAT's p
 
 ##### AcubeSAT 
 
-The AcubeSAT project is Aristotle University of Thessaloniki's cubesat project under the umbrella of the "Fly Your Satellite! 3" program by the educational office of the European Space Agency. The aim of the mission is to study the effects of the conditions in orbit, namely increased radiation load and microgravity on the cultivation and gene expression of yeast cells. 
+The AcubeSAT is Aristotle University of Thessaloniki's cubesat project under the umbrella of the "Fly Your Satellite! 3" program by the educational office of the European Space Agency. The aim of the mission is to study the effects of the conditions in orbit, namely increased radiation load and microgravity on the cultivation and gene expression of yeast cells. 
 
-The satellite is a 3U+ cubesat. The top 1/3 is occupied by the PCB stack containing critical PCBs such as the on board computer or the communications board, as well as the deployment antena, whereas the rest of the satellite houses the payload. Originally the design was 3U but it was changed during the 2nd redesign in order to enable the usage of the check valve without disassembling the entire satellite (more on that later).
+The satellite is a 3U+ cubesat. The top 1/3 is occupied by the PCB stack containing critical PCBs such as the on board computer or the communications board, as well as the deployment antenna, whereas the rest of the satellite houses the payload. Originally the design was 3U but it was changed during the 2nd redesign in order to enable the usage of the check valve without disassembling the entire satellite (more on that later).
 
+![satellite inner view](https://github.com/user-attachments/assets/bf3f3843-63ce-41a5-9cff-08247c7160d7)
+
+In terms of attachment points, the cubesat frame procured from Endurosat comes with fixed mounting holes and ribs that support the interior components as well as the solar panels. Originally the Payload was designed to be mounted with the aid of two of these ribs that were then mounted on the exterior walls of the container. The distances between the PCBs is maintained using spacers.
 
 ###### Experiment hosted
 
 The experiment hosted in the mission can be simply described as taking photographs of an active yeast cell cultivation. There are two parts in it, cultivating the cells and then taking photographs of them. 
 
-The cells are placed inside the channels of a PDMS chip about 30mm x 20mm x 10mm. 
+The yeast cells are placed inside chambers of a PDMS microfluidics chip. This chip has a total of 4 arrays of chambers made of 3 arrays for the experiments and one for testing the operation of the chip. The initial dimensions were about 30mm (length) x 20mm (width) x 10mm (height). In the picture below a smaller cut PDMS chip can be seen, containing only one (of 3) experimental chamber arrays. The design of outside the scope of this document, the only thing that is relevant is the physical architecture as well as the fact that the chip is connected with tubes via needles inserted to it's chambers. 
+
+![pdms chip bad quality (1)](https://github.com/user-attachments/assets/48545d4e-7c1e-47c0-8dfa-e93410364cf3)
+
+The other part of the experiment is the imaging system. In short, a camera is used to take pictures of the cultivation. Attached to the camera is a zooming lens whereas, initially there was a LED excitation PCB to excite the cells so the camera captures their fluorescence as a measure of their growth. From a mechanical standpoint it is absolutely imperative that the distances between the key components, the camera-lens, the LED PCB and the chip remain unchanged during launch and operation, as even a slight change would alter the focus and would harm the legibility of the results. In the picture below the distance measuring 25.87 mm is what is most important.
+
+![distances](https://github.com/user-attachments/assets/98b55b40-f1ac-4cbc-95ca-156641964bb9)
 
 
 ###### Design challenges
 
-There are three major design challenges faced in this mission from a structural/mechanical design standpoint. These are, in order of being in earth and being in space, the following
+Putting all being written until now in order, there are three major design challenges faced in this mission from a structural/mechanical design standpoint. These are, placed in order of what the team was faced with first, the following:
+
 - Making sure everything fits inside the payload vessel and the payload fits with the rest of the satellite
 - Making sure it can withstand the loads (vibrations) of the launch conditions
 - Making sure it is leak proof
+  
 There are further design challenges within each one of those, as well as challenges regarding the heating of the yeast cells to make sure their temperature is in a viable range, as well as a host of different electrical challenges that are outside the scope of this document.
 
-Diving deeper in each one of them, the question of fit entails more than just fitting everything inside a vessel. In order for the photographs to be legible it is absolutely crucial that the focus of the camera is maintained throughout the launch and into orbit. Additionally there are dimensional constraints to the exterior dimensions -and therefore to the interior dimensions- put in place by the fact that the available 3U cubesat space is shared with a stack of PCBs, as can been seen in the picture above. 
+Diving deeper in each one of them, the question of fit entails more than just fitting everything inside a vessel, it also includes maintaining camera focus as well as an unobstruced view for the camera. Additionally there are dimensional constraints to the exterior dimensions -and therefore to the interior dimensions- put in place by the fact that the available 3U cubesat space is shared with a stack of PCBs, as can been seen in the picture above. 
 
-Furthermore, all this assembly must survive the launch conditions with zero relative motion of the components. This is achieved by an effective and reliable elimination of the degrees of freedom of each part, both translational and rotational. The vibration loads applied to the cubesat during launch can be modelled, according to the ECSS standard as this (add proper reference and load). More information regarding the analysis performed can be found in 1 (add link)
+Furthermore, this assembly must survive the launch conditions with zero relative motion of the components. This is achieved by an effective and reliable elimination of the degrees of freedom of each part, both translational and rotational. The vibration loads applied to the cubesat during launch can be modelled, according to the ECSS standard as this (add proper reference and load). More information regarding the analysis performed can be found in 1 (add link)
 
 When it comes to the leak rate, it is specified such that the pressure inside the container will not be reduced below 0.8 atm by the end of the 3rd experiment. The container is pressurized using the check valve in the beginning of the mission to 1.2 atm. 
 
