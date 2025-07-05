@@ -81,20 +81,38 @@ This assembly was then inserted into the container, the aluminium vessel holding
 
 
 In summary then this design established that:
-- the PDMS chip is to be held inside a chip holder
-- the chip holder is to be supported along with the rest of the parts inside the payload, the optical subsystem, the fludics and the SU PCB, by the unibody assembly
-- everything is housed inside the container, sealed with a PTFE gasket
-- the container is mounted using ribs to the cubesat's frame
+- The PDMS chip is to be held inside a chip holder
+- The chip holder is to be supported along with the rest of the parts inside the payload, the optical subsystem, the fludics and the SU PCB, by the unibody assembly
+- Everything is housed inside the container, sealed with a PTFE gasket
+- The container is mounted using ribs to the cubesat's frame
 
-This design was assessed by ESA's team of experts during the critical design review (CDR), shortly after acceptance to the program. It had however some shortcomings. For once, the question of assembly procedures was further down the line at this point and most components were also in an early stage meaning that the design was more a theoretical one that practical. Mounting points, tubes and cables inside were also for the most part left out of the process. 
+This design was assessed by ESA's team of experts during the critical design review (CDR), shortly after acceptance to the program. It had however some shortcomings. For once, the question of assembly procedures was further down the line at this point and most components were also in an early stage meaning that the design was more a theoretical one that a practical one. Mounting points, tubes and cables, fluid bags inside were also for the most part left out of the discussion. 
 
+Summary of open points:
+- Restriction of movement not properly defined along Z axis
+- Tubes and cables inside not taken into account
+- Interior parts mounting not properly defined
 
 ###### 1st redesign
 
-Those are the holes that the first major redesign attempted to fill. Between the early designs and this one, other modifications were made mostly uncoordinated in order to fix problems that crept up left and right, that left the design somewhat inconsistent with design elements sometimes clashing, with some of the details about tubes, mounting points and cables still not properly defined. This redesign then aimed to unify the design and provide solutions and add detail on the areas discussed above. 
+Those are the holes that the first major redesign attempted to fill. Between the early designs and this one, other modifications were made in order to fix problems that crept up left and right, that left the design somewhat inconsistent with design elements sometimes clashing, with some of the details about tubes, mounting points and cables still not entirely defined. This redesign then aimed to unify the design, adress some more practical open points and add detail on the areas discussed above.
 
+![payload boupan](https://github.com/user-attachments/assets/8e24358b-a086-4ed4-9c93-c33725e0a339)
 
+Before this first redesign, some design changes were made, such as the introduction of a second opening to the container enclosure, enabling an assembly process but doubling the lids and gaskets required to leak proof it, as well as increasing the bolt count from 16 to 32 for the lids and having the weight go up as well. 
 
+During the redesign the focus turned to adding more detail in specific areas of the design, such as the chip holder assembly, containing sensors, heaters, inserts and other smaller components absent from previous designs.
+
+![adding significant detail](https://github.com/user-attachments/assets/f9d0533b-a934-4f67-8efe-a7825d7c0f7b)
+
+![boupan old vs new](https://github.com/user-attachments/assets/911298d8-ee74-498c-a5f6-0191f1eb99b5)
+
+Although much detail was added in some aspects and solutions were provided for some of the previous open points, these solutions had some shortcomings themselves, particularly when it comes to the mechanical interfaces of the components. These can be summed up as:
+- Restriction of degrees of freedom clashing with leak proofing
+- Inadequate or improper fixation of interior components, specifically the camera assembly
+- Very complicated difficult to manufacture parts
+
+More specifically:
 
 
 
@@ -116,7 +134,7 @@ In doing this redesign the primary target was accomodate these changes while at 
 
 ###### Comparisons
 
-For comparison here is the old vs new assembly for the paylaod, both exterior and interior. The component reduction is obvious.
+For comparison here is the 1st redesign vs 2nd redesign for the paylaod, both exterior and interior. The component reduction is obvious.
 
 ![old vs new exterior](https://github.com/user-attachments/assets/8120807d-5b86-46c7-b619-13f6497e0069)
 
