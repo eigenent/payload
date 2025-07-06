@@ -12,17 +12,17 @@ This document contains a guide through the second major redesign of AcubeSAT's p
 ##### Contents
 
 1. **AcubeSAT**  
-   1.1 [Experiment hosted](#experiment-hosted)  
-   1.2 [Design challenges](#design-challenges)  
+   1.1 [Experiment hosted](#11-experiment-hosted)  
+   1.2 [Design challenges](#12-design-challenges)  
 2. **Previous designs**  
-   2.1 [Original](#original)  
-   2.2 [1st major redesign](#1st-major-redesign)  
+   2.1 [Original](#21-original)  
+   2.2 [1st major redesign](#22-1st-major-redesign)  
 3. **2nd redesign (my work)**  
-   3.1 [Interior](#interior)  
-   3.2 [Exterior](#exterior)  
-   3.3 [Sum up](#sum-up)  
-4. **Newest version**  
-5. **Further reading**
+   3.1 [Interior](#31-interior)  
+   3.2 [Exterior](#32-exterior)  
+   3.3 [Sum up](#33-sum-up)  
+4. [Newest version](#4-newest-version)  
+5. [Further reading](#further-reading)
 
 ---
 
