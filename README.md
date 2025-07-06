@@ -79,7 +79,6 @@ As seen in the above image (everything is inverted, so the SU board is in the -Z
 
 This assembly was then inserted into the container, the aluminium vessel holding everything together, through an opening on its' -Z face. The picture above with the proper distances between parts includes the depiction of the container, however also includes an even older version of the payload interior without the manifold for instance. 
 
-
 In summary then this design established that:
 - The PDMS chip is to be held inside a chip holder
 - The chip holder is to be supported along with the rest of the parts inside the payload, the optical subsystem, the fludics and the SU PCB, by the unibody assembly
@@ -102,7 +101,6 @@ Those are the holes that the first major redesign attempted to fill. Between the
 Before this first redesign, some design changes were made, such as the introduction of a second opening to the container enclosure, enabling an assembly process but doubling the lids and gaskets required to leak proof it, as well as increasing the bolt count from 16 to 32 for the lids and having the weight go up as well. 
 
 ![pre boupan 3](https://github.com/user-attachments/assets/f9aba805-eebd-4b3d-a499-81df3bf2bb25)
-
 
 During the redesign the focus turned to adding more detail in specific areas of the design, such as the chip holder assembly, containing sensors, heaters, inserts and other smaller components absent from previous designs. Also space was made for the bags, doing away with the complex camera mounting. 
 
@@ -135,41 +133,77 @@ More specifically some of the major problems that require a change are the follo
 
 ![too many parts 1](https://github.com/user-attachments/assets/3d5edbed-baa8-4e1b-b473-f9c6752fbd40)
 
-6. Additionally carried through from the initial design and the intermidiete redesigns there are a number of exterior problems. For once, there is too much complexity with unesseccary ribs and fasteners acting as a middle man between the container and the frame. Then there is the second lid introduced to ease assembly, which when the bolt heads are added contributes significantly to the total height of the payload. Lastly the edges are not smoothed out, something that adds some weight without any reason. 
+6. Additionally carried through from the initial design and the intermidiete redesigns there are a number of exterior problems. For once, there is too much complexity with unesseccary ribs and fasteners acting as a middle man between the container and the frame. Then there is the second lid introduced to ease assembly, which when the bolt heads are added contributes significantly to the total height and weight of the payload. The edges are not smooth which is also adding weight. Lastly the check valve, which is the only way to pressurize the payload once closed, is still in the +Z face of the payload, facing the interior of the satellite, making the repressurization impossible without the complete dissasembly of the satellite. This is not only a problem because of the inconvenience but adds a major system risk since after the system level acceptance test, when the satellite is given a clearance from the launch provider, there may be a significant waiting period, during which the interior pressure could fall below the 1.2 atm design level, making it nessecary for the repressurization to occur. However taking the satellite apart could possibly nullify the acceptance test.
+   
 ![general exterior problems](https://github.com/user-attachments/assets/3af9dcba-e9b2-44bb-81f2-fb8cfdb5f782)
 
 ------------
 ##### 2nd redesign (My work)
 
-Although this redesign was initiated by some specific circumstances, the problems identified above really necessitated a major eventual redesign. That being said, two specific necessities triggered it. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable which necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. 
-
-In doing this redesign the primary target was accomodate these changes while at the same time adress some of the shortcomings of the previous designs discussed above, as well as enabling the repressurazation of the payload without the need to completely disassemble the cubesat.
+Although this redesign was initiated by some specific circumstances, the problems identified above really necessitated a major eventual redesign. That being said, two specific necessities triggered it. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable which necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. In doing this redesign the primary target was accomodate these changes while at the same time adress some of the shortcomings of the previous designs discussed above. 
 
 ###### Chip holder
 
-![properly beefy chip holder](https://github.com/user-attachments/assets/0f1c7ee7-bcb9-49fe-9f04-b9e70d882d5c)
+First of all a redesign of all internal components was underway to ensure simplicity and manufacturability. For instance, it can be seen in the chip holder bottom half illustrated bellow that the previous shortcomings are solved. The design is much more substancial, wall thickness of 4mm in some areas. There are also some details, such as the smooth inserts that allow for both stress relief and the accomodation of the orthogonal angle of the metal sheet on which the inserts were based, all the while without compromising on the manufacturability. 
+
+![smooth and beefy](https://github.com/user-attachments/assets/b1add1b0-68f5-4f41-b481-16bb693a1e5c)
+
+###### Interior
+
+Then the number of interior parts was significantly reduced along with a major simplification in their interface. Gone are the bolt connections everywhere, replaced with a simple geoemtrical connection (the shape of the parts is keeping them together). The camera is mounted with a proper bolt connections where the two bodies are in direct contact, with the bolt taking only axial stresses while sheer stresses are absorbed by the friction of the bodies. The main body of the bolt is not subject to bending forces. What is more, even if it is not necessary and it was eventually dropped from the latest design, there are further geometrical supports for the optical system. These do not introduce a problem similar to no. 1 from the previous design since the bolts are not fastened in the Z direction but rather in the Y.
+
+![simplified unibody assembly](https://github.com/user-attachments/assets/6b0c2fbf-bab7-433b-90ba-78d1e7179e88)
+
+![simplified connections 2](https://github.com/user-attachments/assets/0a897af9-2202-4efb-960d-4f11ebf0ff29)
+
+This iteration was the first properly defining a solution for the restriction of the Z axis movement of the interior assembly. This connection, in keeping with the theme of this design philosophy is based on form connections, where the shape of the parts introduces the restriction. Here the internal payload assembly, consisting of the unibody assembly, the manifold and the SU PCB are holded together using bolts and spacers. Then it is slided into place from above into the container, stopping at the end of the guiding rail shaped into the container's walls (b). After that a safety piece is added above to restrict the movement in the Z axis. This part is then safely fastened to the unibody lid (a). As can be seen, there is no component of the interior assembly touching the container lid (d circle) and thus all the pressure created by the tension of the botls holding the lid is transfered to the PTFE gasket ensuring leak proofing. 
 
 
-###### Unibody assembly
+![Z fixation explained](https://github.com/user-attachments/assets/7f0ca1b1-456c-4887-bae9-68a50086f007)
+
+Additionally, in the bottom of the container main body floor 4 "L"s were formed, put in place to restrict the rocking motion of the interior assembly. More specifically, they kept the heads of the bolts used to keep the interior parts together. Having 4 of these, one in every corner ensured that all rocking degrees of freedom are restricted. 
+
+![idea no rocking](https://github.com/user-attachments/assets/c3f5676e-6632-4c1e-aa2a-b7095502da59)
+
+Further, the picture is complete by adding the actual reagent bags procured and tested by this point in the project, as well as the removal of the control layer in the PDMS chip microfluidics system which resulted in the removal of one pump. The other pump was rotated around to make way for the cable exiting on the top of the camera, rather than the side as with the previous design. The interior shapes have no curvature (apart from the fillets to ease stresses).
+
+![interior nent](https://github.com/user-attachments/assets/9504629c-9a69-4839-b745-f57157993367)
 
 
+###### Exterior
 
-###### Container
+Due to the introduction of the new battery pack, the aim was to reduce the overall space, height-wise that the payload covered inside the 3U cubesat. The tallest component on the +Z container lid was the check valve. Initially a plan was drafted to have it lie on it's side rather than having it be vertical. The thinking was that this would also enable the refilling with only a solar panel taken out and not the entire satellite taken apart as before. However, it turned out that due to the size of the valve operating tool this was impossible given the extremely limited space as the tool would not fit between the bolts securing the container lid. What is more, an additional constraint imposed by the introduction of an bigger camera, meant that whatever space was saved inside due to inner simplifications was taken by the new camera and the giant (relatively speaking) cable coming out it's +Z face. The next solution attempted was to move to a single opening in the design, doing away with the two openings of the previous configuration, making the assembly process more challenging. Despite the significant height reduction (5mm), the space was still not adequate. By this time it was inevitable to go against the original 3U cubesat design and into a 3U+. After a detailed trade off it was decided to move the check valve to the -Z face of the payload, with it protruding on the -Z face of the satellite. This bought us the necessary space for the new battery pack and enabled the repressurization of the payload without removing anything. The only required sacrifice was the removal of the solar panel on the -Z face, which however, with the alteration of the pointing strategy of the cubesat only resulted in insignificant loss in energy production capacity. 
+
+![trade off for tuna can](https://github.com/user-attachments/assets/f5035c53-577b-45d1-a9bb-f4c474a27a1c)
 
 
+Another aspect of the design we were keen to fix was the many parts present on the outside. The elimination of one of the openings already resulted in a major reduction, however more parts could be eliminated if the ribs in between the payload and the frame were removed. Removing them meant that their openings should be created on the outside of the container itself. Thus the extrusions of the container were enlarged to make way for these. Lastly large radious fillets were introduced to the corners of the container body in part to smooth the edges and in part to further reduce it's mass. 
 
-###### Comparisons
+![exterior changes](https://github.com/user-attachments/assets/94c4b385-72e5-4f19-8f6a-477b30be9e97)
 
-For comparison here is the 1st redesign vs 2nd redesign for the paylaod, both exterior and interior. The component reduction is obvious.
 
-![old vs new exterior](https://github.com/user-attachments/assets/8120807d-5b86-46c7-b619-13f6497e0069)
+###### Sum up
 
-![old vs new interior](https://github.com/user-attachments/assets/195a003c-d701-43dc-9906-31d8d5306111)
+This design iteration solves all of the previous problems. 
+- The interior components are restricted in the Z axis (as well as the XY plain as before)
+- The interior parts are properly fastened to the chassis (unibody assembly)
+- The parts are greatly simplified, a lot of bolts are taken out, weight is reduced
+- The valve can be operated without the disassembly of the entire satellite
+
+However, even though we did receive an initial confirmation that the design was manufacturable from Xometry (a intermidiate company between manufacturers and clients), and the Finite Element Analysis performed returned promising results, the team was later informed that the container was not manufacturable due to the height of the interior container walls. 
+
+**This design can be found as a .STEP file in this repository.**
+
 
 ----------
 ##### Newest version
 
-The one actually implemented
+To counter this problem, the team opted to move the opening of the container to the middle of it rather than the top side, eliminating the container lid and splitting the main body into two halves. As can be seen this necessitated the rethinking of the interior fixation for the Z axis movement. Now 4 rods attached to the lower half of the container run all the way to the top of the unibody lid with spacers separating the parts inbetween. Then simple nuts are inserted on top of the rods to fix the entire assembly in place. Both container halves don't have stoppers on their rails anymore to avoid problem no.1 from the 1st redesign iteration. The rest remain pretty much unchanged. This iteration of the payload was constructed and has been succesfully qualified to survive the vibrations during launch. The testing took place in ESA's CSF facility.
+
+![proper mounting new payload](https://github.com/user-attachments/assets/3064699d-42a7-4595-a501-c0f1a2051c0b)
+
+![container](https://github.com/user-attachments/assets/bd83cf10-482b-4207-8e0a-66f29188335d)
+
 
 ----------
 ##### Further reading
