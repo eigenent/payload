@@ -77,7 +77,10 @@ Realizing the major engineering challenges described above the team decided that
 
 As seen in the above image (everything is inverted, so the SU board is in the -Z direction), the PEEK unibody assembly is made of two almost identical parts which the team called "unibody halfs", one part on which these two were connected on, which housed the two pumps for the fluidics system, and two "unibody sides" connecting all three together. Inside and closer to -Z, there is the chip holder housing the PDMS chip, some microtubes and sensors necessary for controlling the system. Further along on the -Z direction there is the SU PCB assembly consisted of the manifold, its' valves and the SU PCB all mounted on the Unibody assembly using bolts. 
 
-This assembly was then inserted into the container, the aluminium vessel holding everything together, through an opening on its' -Z face. The picture above with the proper distances between parts includes the depiction of the container, however also includes an even older version of the payload interior without the manifold for instance. 
+This assembly was then inserted into the container, the aluminium vessel holding everything together, through an opening on its' -Z face. The picture above with the proper distances between parts includes the depiction of the container, however also includes an even older version of the payload interior without the manifold for instance. The interior assembly was restricted in the XY plane through the use of the rails seen in the picture below. Initially there were two sets of rails both a and b, however the team soon realized that only the rails "a" were necessary and removing "b" would maximize the space for the SU PCB and the manifold. 
+
+![initial XY plane fixation 2](https://github.com/user-attachments/assets/7e4cbb6d-2b90-4e3d-ad23-41487231c858)
+
 
 In summary then this design established that:
 - The PDMS chip is to be held inside a chip holder
@@ -189,6 +192,7 @@ This design iteration solves all of the previous problems.
 - The interior parts are properly fastened to the chassis (unibody assembly)
 - The parts are greatly simplified, a lot of bolts are taken out, weight is reduced
 - The valve can be operated without the disassembly of the entire satellite
+- Proper leak proofing since all the pressure goes to the PTFE gasket and not any interior parts
 
 However, even though we did receive an initial confirmation that the design was manufacturable from Xometry (a intermidiate company between manufacturers and clients), and the Finite Element Analysis performed returned promising results, the team was later informed that the container was not manufacturable due to the height of the interior container walls. 
 
@@ -208,4 +212,4 @@ To counter this problem, the team opted to move the opening of the container to 
 ----------
 ##### Further reading
 
-For further reading into the nitty gritty of the design as well as other aspects of the mission head to [insert spacedot gitlab link]. There you can find public documents containing mechanical drawings, CADs, FEM models, as well as analysis and test results, reports and more. 
+For further reading into the nitty gritty of the design as well as other aspects of the mission head to [AcubeSAT gitlab](https://gitlab.com/acubesat). There you can find public documents containing mechanical drawings, CADs, FEM models, as well as analysis and test results, reports and more. 
