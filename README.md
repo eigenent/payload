@@ -101,7 +101,10 @@ Those are the holes that the first major redesign attempted to fill. Between the
 
 Before this first redesign, some design changes were made, such as the introduction of a second opening to the container enclosure, enabling an assembly process but doubling the lids and gaskets required to leak proof it, as well as increasing the bolt count from 16 to 32 for the lids and having the weight go up as well. 
 
-During the redesign the focus turned to adding more detail in specific areas of the design, such as the chip holder assembly, containing sensors, heaters, inserts and other smaller components absent from previous designs.
+![pre boupan 3](https://github.com/user-attachments/assets/f9aba805-eebd-4b3d-a499-81df3bf2bb25)
+
+
+During the redesign the focus turned to adding more detail in specific areas of the design, such as the chip holder assembly, containing sensors, heaters, inserts and other smaller components absent from previous designs. Also space was made for the bags, doing away with the complex camera mounting. 
 
 ![adding significant detail](https://github.com/user-attachments/assets/f9d0533b-a934-4f67-8efe-a7825d7c0f7b)
 
@@ -112,21 +115,44 @@ Although much detail was added in some aspects and solutions were provided for s
 - Inadequate or improper fixation of interior components, specifically the camera assembly
 - Very complicated difficult to manufacture parts
 
-More specifically:
+More specifically some of the major problems that require a change are the following:
 
+1. First of all there is the problem of now properly restricting the Z axis movement of the internal parts. In the previous design this was completely lacking, but here the provided solution does not allow for the PTFE gasket to be pressed using the bolt connections (b, b2). What happens is that there are stand offs on the top and bottom of the unibody assembly directly in contact with the two lids of the container (a, a2). As is pressure and tension of the exterior bolts is transfered to the stand offs and the interior assembly rather than the lids. 
 
+![exlplain improper fixation](https://github.com/user-attachments/assets/33844513-7805-409e-948b-bc8429cbe640)
 
+2. A second major problem is the attachement of interior parts to the unibody assembly, the chassis of the design. An obvious, but not the only example, is the fixation of the optical system. The previous geometrical restriction was replaced with a bolt connection one. However it not being properly designed left the main part of the bolts vunerable to tangent stresses making the connection inadequate to restrict the Z axis movement as well as various rotational movements. 
+
+![bad bolts](https://github.com/user-attachments/assets/5bc7c5d6-c30f-4aca-9490-a909f3b37aae)
+
+3. Another problem is the general unessecary complexity in the design of parts. Some examples include the chip holder whose geometry is chaotic or the curvature found on various other components. Indicatively, c and e are way too thin to be manufactured, d and f serve absolutely no purpose. A
+
+![bad ch](https://github.com/user-attachments/assets/142bbf1e-952c-4f69-b272-920e509e0af9)
+
+![curvature](https://github.com/user-attachments/assets/1d33df49-700f-43f5-8787-0b0b0a6896af)
+
+5. Here are that there are way too many parts in this assembly. There are the 3 main unibody components, the two "halfs" (2 is the visible one) and the lid (1), but additionally there is an extra part holding all three together (3) and 12 fasteners to fasten all the unibody assembly together (only 2 are visible). 
+
+![too many parts 1](https://github.com/user-attachments/assets/3d5edbed-baa8-4e1b-b473-f9c6752fbd40)
+
+6. Additionally carried through from the initial design and the intermidiete redesigns there are a number of exterior problems. For once, there is too much complexity with unesseccary ribs and fasteners acting as a middle man between the container and the frame. Then there is the second lid introduced to ease assembly, which when the bolt heads are added contributes significantly to the total height of the payload. Lastly the edges are not smoothed out, something that adds some weight without any reason. 
+![general exterior problems](https://github.com/user-attachments/assets/3af9dcba-e9b2-44bb-81f2-fb8cfdb5f782)
 
 ------------
 ##### 2nd redesign (My work)
 
-Although this redesign was initiated by some specific circumstances, the problems identified above really necessitated a major eventual redesign. That being said, two specific necessities triggered it. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable. This necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. 
+Although this redesign was initiated by some specific circumstances, the problems identified above really necessitated a major eventual redesign. That being said, two specific necessities triggered it. On the one hand a different, bigger battery pack was opted for due to the previous one becoming unavailable which necessitated the reduction in the height of the container in order for the entire PCB stack to fit. On the other hand the scientific team requested another camera, again bigger overall but crucially taller and with it's cable exiting on it's +z face and needing 20mm of space before it can bend. Thankfully the removal of the control level in the fluidics/microfluidics system reduced the number of tubes as well as the height of the PDMS chip by 7mm. 
 
 In doing this redesign the primary target was accomodate these changes while at the same time adress some of the shortcomings of the previous designs discussed above, as well as enabling the repressurazation of the payload without the need to completely disassemble the cubesat.
 
 ###### Chip holder
 
+![properly beefy chip holder](https://github.com/user-attachments/assets/0f1c7ee7-bcb9-49fe-9f04-b9e70d882d5c)
+
+
 ###### Unibody assembly
+
+
 
 ###### Container
 
